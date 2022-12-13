@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body{
+    font-family: 'Playfair Display', serif;
+    height:600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-Principal{
+    width: 335px;
+    background:  #FF1E1E;
+    padding: 6rem;
+    border-radius: 5px;
+    position: center;
+}
+
+.form-Principal h1{
+    font-size: 35px;
+    width: 400px;
+    margin: -80px 0px 0px -50px;
+    
+}
+
+.form-info input[type="UserName"],
+.form-info input[type="password"]{
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    border: none;
+    outline:none;
+    background: rgb(253, 252, 252);
+    padding: 10px 50px;
+    text-align:center;
+    border-radius: 0px;
+    margin:40px 0px 0px -80px;
+    color: rgb(26, 23, 23);
+    
+}
+
+.login-button button[type="submit"]{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    width: 200px;
+    height:50px;
+    margin: 40px 60px 0px -28px;
+}
+
+.form-Principal a{
+    border: none;
+    outline:none;
+    font-size: 18px;
+    margin: 0px 0px 80px 20px;
+    color:rgb(26, 23, 23)
+}
+.text-usuario{
+    width: 300px;
+    height:0px;
+    margin: 0px 0px 0px -25px;
+    color: rgb(26, 23, 23);
+}
+.text-Password{
+    margin: 0px 0px 0px 0px;
+    width: 200px;
+    height:0px;
+    color: rgb(26, 23, 23);
+}

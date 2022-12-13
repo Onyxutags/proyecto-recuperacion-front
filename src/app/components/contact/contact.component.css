@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+.text-danger {
+    text-align: start;
+    margin-left: 7px;
+    font-size: 20px;
+}
+.container{
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+}
+
+.container button[type="submit"]{
+    width: 150px;
+    height:50px;
+    margin: 0px 60px 0px 0px;
+    background: #FF1E1E;
+}
+
+
+.container button[class="btn btn-secondary btn-lg float-start"]{
+    width: 150px;
+    height:50px;
+    margin: 0px 60px 0px 50px;
+    background: #FF1E1E;
+    color:azure;
+}

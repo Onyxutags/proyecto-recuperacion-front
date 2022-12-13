@@ -1,0 +1,29 @@
+<body>
+  <div class="reg_principal">
+  <h1> Crear Usuario </h1> 
+  <form class="registrar" [formGroup]="usuariosForm" (ngSubmit)="usuarioNuevo()">
+  <div class="form-info">
+  <input type="text" formControlName="usuario" placeholder="Nombre de Usuario">
+  <div class="text-User"*ngIf="usuariosForm.get('usuario')?.hasError('required') && usuariosForm.get('usuario')?.touched">
+  <span><strong>Nombre de usuario requerido</strong></span>
+  </div>
+          <input type="text" formControlName="numero" placeholder="Numero de Telefono">
+          <div class="text-numero"*ngIf="usuariosForm.get('numero')?.hasError('required') && usuariosForm.get('numero')?.touched">
+          <span><strong>Numero de telefono requerido</strong></span>
+          </div>
+              <input type="text" formControlName="email" placeholder="Correo Electronico">
+              <div class="text-Email"*ngIf="usuariosForm.get('email')?.hasError('required') && usuariosForm.get('email')?.touched">
+              <span><strong>Correo requerido</strong></span>
+              </div>
+              <div class="text-EmailType" *ngIf="usuariosForm.controls['email'].hasError('email') && usuariosForm.get('email')?.touched">
+              <span><strong>Correo invalido</strong></span>
+              </div>
+ <input type="password" formControlName="password" placeholder="Contraseña">
+ <div class="text-Password"*ngIf="usuariosForm.get('password')?.hasError('required') && usuariosForm.get('password')?.touched">
+ <span><strong>Contraseña Requerida</strong></span>
+</div>
+          <button type="submit" class="btn-reg">Registrar</button>
+        </div>
+     </form>
+  </div>
+</body>

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.container{
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+}
+
+.fa-solid{
+    cursor: pointer;
+    margin-left: 7px;
+}
+
+.container button[class="btn btn-success float-end"]{
+    width: 150px;
+    height:50px;
+    margin: 0px 60px 0px 50px;
+    background: #FF1E1E;
+    color:azure;
+}

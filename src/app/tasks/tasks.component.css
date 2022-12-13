@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+body{
+   font-family: 'Playfair Display', serif;
+   text-align: center;
+   
+}
+
+h1{
+   font-family: 'Playfair Display', serif;
+    color: rgb(22, 21, 21);
+    text-align: center;
+    
+}
+
+
+div.galeria{
+font-family: 'Playfair Display', serif;
+margin: 10px 20px;
+float: left;
+width: 250px;
+}
+div.imagen{
+   font-family: 'Playfair Display', serif;
+   height: auto;
+}
+div.pie{
+   font-family: 'Playfair Display', serif;
+   text-align: center;
+   padding: 10px; 
+
+}

@@ -1,0 +1,21 @@
+<body>
+<div class="form-Principal">
+    <h1>Ingresar Cuenta</h1> 
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="LoginUser()">
+      <div class="form-info">
+           <input type="UserName" placeholder="Nombre de Usuario" formControlName="usuario">
+           <div class="text-usuario"*ngIf="loginForm.get('usuario')?.hasError('required') && loginForm.get('usuario')?.touched">
+           <span><strong>Nombre de Usuario requerido</strong></span>
+           </div>
+                           <input type="password" placeholder="Contraseña" formControlName="password">
+                           <div class="text-Password"*ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched">
+                           <span><strong>Contraseña requerida</strong></span>
+                           </div>
+                      </div>
+                      <div class="login-button">
+                      <button type="submit" class="btn-send">Ingresar</button>
+                      </div>
+                      <a href="Registrarse" class="btn-sendReg">Crear cuenta</a>
+              </form>      
+         </div>
+</body>
